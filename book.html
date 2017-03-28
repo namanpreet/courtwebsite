@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-US">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width" />
+      <title>Delhi court marriage</title>
+      <link rel="stylesheet" href="css/components.css">
+      <link rel="stylesheet" href="css/responsee.css">
+      <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+      <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+      <!-- CUSTOM STYLE -->  
+      <link rel="stylesheet" href="css/template-style.css">
+      <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+      <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+      <script type="text/javascript" src="js/jquery-ui.min.js"></script>    
+      <script type="text/javascript" src="js/modernizr.js"></script>
+	  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	  <script>
+	  $( function() {
+		$( "#datepicker" ).datepicker({ minDate: -0, maxDate: "+1M +10D" });
+	  } );
+	  </script>
+      <script type="text/javascript" src="js/responsee.js"></script>   
+	  
+	  <script>
+		function validateForm() {
+			var email = document.forms["appform"]["email"].value;
+			var name = document.forms["appform"]["name"].value;
+			var phone = document.forms["appform"]["phone"].value;
+			var date = document.forms["appform"]["date"].value;
+			var atpos = email.indexOf("@");
+			var dotpos = email.lastIndexOf(".");
+			
+			if (email == "" || name == "" || phone == "") {
+				alert("Required Fields must be filled out");
+				return false;
+			}
+			
+			if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length) {
+			alert("Not a valid e-mail address");
+			document.appform.email.focus();
+			return false;
+			}
+			
+			else if(! name.match(/^[A-Za-z]+$/))
+				{alert("Not a valid name");
+				document.appform.name.focus();
+				return false;
+				}
+			
+			else if(! phone.match(/^\d{10}+$/){ 
+				alert("Not a valid phone");
+				document.appform.phone.focus();
+				return false;
+				}	
+				
+			else{return true;}							  
+							 
+					
+		}
+		</script>
+      <!--[if lt IE 9]>
+	      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+      <![endif]-->
+   </head>
+   <body class="size-1140">
+      <!-- TOP NAV WITH LOGO -->  
+      <header>
+         <nav>
+            <div class="line">
+               <div class="top-nav">              
+                  <div class="logo hide-l">
+                     <a href="index.html">DELHI COURT<br /><strong>MARRIAGE</strong></a>
+                  </div>                  
+                  <p class="nav-text">DELHI COURT MARRIAGE</p>
+                  <div class="top-nav s-12 l-5">
+                     <ul class="right top-ul chevron">
+                        <li><a href="index.html">Home</a>
+                        </li>
+                        <li><a href="about.html">About us</a>
+                        </li>
+                         <li><a href="req.html">Requirements</a>
+                        </li>
+                     </ul>
+                  </div>
+                  <ul class="s-12 l-2">
+                     <li class="logo hide-s hide-m">
+                        <a href="index.html">DELHI COURT<br /><strong>MARRIAGE</strong></a>
+                     </li>
+                  </ul>
+                  <div class="top-nav s-12 l-5">
+                     <ul class="top-ul chevron">
+                        <li>
+                           <a>Services</a>			    
+                           <ul>
+                              <li><a href="1.html">Arya Samaj Marriage</a>
+                              </li>
+							  <li><a href="2.html">Court Marriage</a>
+                              </li>
+							  <li><a href="3.html">Foreigner Marriage</a>
+                              </li>
+                              <li><a href="4.html">Hindu Marriage</a>
+                              </li>
+							  <li><a href="5.html">Inter Cast Marriage</a>
+                              </li>
+							  <li><a href="6.html">Inter Religion Marriage</a>
+                              </li>
+							  <li><a href="8.html">Muslim Marriage</a>
+                              </li>
+                              <li><a href="9.html">NRI Marriage</a>
+                              </li> 
+                              <li><a href="10.html">Special Marriage</a>
+                              </li>
+                           </ul>
+                        </li>
+						<li><a href="book.html">Booking</a>
+                        </li>
+                        <li><a href="index.html#contact">Contact</a>
+                        </li>
+                     </ul> 
+                  </div>
+               </div>
+            </div>
+         </nav>
+      </header>
+      <section>
+         <div id="head">
+            <div class="line">
+               <h1>BOOK<br>APPOINTMENT</h1>
+            </div>
+         </div>
+		 </section>
+         <div id="content">
+            <div class="line" >
+               <div class="margin" >
+                  <div align="center">
+                     <h2>Book Appointment</h2><hr><br>
+                     <form class="customform" name="appform" method="post" action="appointment.php" onsubmit="return validateForm()">
+                        <input name="email" placeholder="Your e-mail*" title="Your e-mail" type="email"required/>
+                        <input name="name" placeholder="Your name*" title="Your name" type="text" required/>
+                        <input name="phone" placeholder="Your phone no.*" title="Your phone no." type="number" required/>
+                        <input name="date" placeholder="Preferable Appointment Date(mm/dd/yyyy)" title="Appointment Date" type="text" id="datepicker" readonly>
+                        <textarea placeholder="Address" name="address" rows="3"></textarea>
+                        <button type="submit">Submit Button</button>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+         
+     <footer>
+         <div class="line">
+            <div class="s-12 l-6">
+               <p>DELHI COURT MARRIAGE
+               </p>
+            </div>
+            <div class="s-12 l-6">
+               <p class="right">
+			   
+               </p>
+            </div>
+         </div>
+      </footer>
+      
+      
+   </body>
+</html>

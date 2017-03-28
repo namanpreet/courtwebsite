@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en-US">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width" />
+      <title>Delhi court marriage</title>
+      <link rel="stylesheet" href="css/components.css">
+      <link rel="stylesheet" href="css/responsee.css">
+      <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+      <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+      <!-- CUSTOM STYLE -->  
+      <link rel="stylesheet" href="css/template-style.css">
+      <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+      <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+      <script type="text/javascript" src="js/jquery-ui.min.js"></script>    
+      <script type="text/javascript" src="js/modernizr.js"></script>
+      <script type="text/javascript" src="js/responsee.js"></script>   
+      <!--[if lt IE 9]>
+	      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+      <![endif]-->
+	  
+	  <script>
+		function validateForm() {
+			var email = document.forms["myForm"]["email"].value;
+			var first_name = document.forms["myForm"]["first_name"].value;
+			var last_name = document.forms["myForm"]["last_name"].value;
+			var comments = document.forms["myForm"]["comments"].value;
+			var atpos = email.indexOf("@");
+			var dotpos = email.lastIndexOf(".");
+			
+			if (email == "" || first_name == "" || last_name == ""|| comments == "") {
+				alert("Required Fields must be filled out");
+				return false;
+			}
+			
+			else if (atpos<1 || dotpos<atpos+2 || dotpos+2>=email.length) {
+			alert("Not a valid e-mail address");
+			document.myForm.email.focus();
+			return false;
+			}
+			
+			else if(! first_name.match(/^[A-Za-z]+$/))
+				{alert("Not a valid first-name");
+				document.myForm.first_name.focus();
+				return false;
+				}
+			
+			else if(! last_name.match(/^[A-Za-z]+$/)){
+				alert("Not a valid last-name");
+				document.myForm.last_name.focus();
+				return false;
+				}
+			
+			else{return true;}
+		}
+	</script>
+	  
+   </head>
+   <body class="size-1140">
+      <!-- TOP NAV WITH LOGO -->  
+      <header>
+         <nav>
+            <div class="line">
+               <div class="top-nav">              
+                  <div class="logo hide-l">
+                     <a href="index.html">DELHI COURT<br /><strong>MARRIAGE</strong></a>
+                  </div>     
+                  <p class="nav-text"></p>
+                  <div class="top-nav s-12 l-5">
+                     <ul class="right top-ul chevron">
+                        <li><a href="index.html">Home</a>
+                        </li>
+                        <li><a href="about.html">About us</a>
+                        </li>
+                        <li><a href="req.html">Requirements</a>
+                        </li>
+                     </ul>
+                  </div>
+                  <ul class="s-12 l-2">
+                     <li class="logo hide-s hide-m">
+                        <a href="index.html">DELHI COURT<br /><strong>MARRIAGE</strong></a>
+                     </li>
+                  </ul>
+                  <div class="top-nav s-12 l-5">
+                     <ul class="top-ul chevron">
+                        <li>
+                           <a>Services</a>			    
+                           <ul>
+                              <li><a href="1.html">Arya Samaj Marriage</a>
+                              </li>
+							  <li><a href="2.html">Court Marriage</a>
+                              </li>
+							  <li><a href="3.html">Foreigner Marriage</a>
+                              </li>
+                              <li><a href="4.html">Hindu Marriage</a>
+                              </li>
+							  <li><a href="5.html">Inter Cast Marriage</a>
+                              </li>
+							  <li><a href="6.html">Inter Religion Marriage</a>
+                              </li>
+							  <li><a href="8.html">Muslim Marriage</a>
+                              </li>
+                              <li><a href="9.html">NRI Marriage</a>
+                              </li> 
+                              <li><a href="10.html">Special Marriage</a>
+                              </li>
+                           </ul>
+                        </li>
+						<li><a href="book.html">Booking</a>
+                        </li>
+                        <li><a href="#contact">Contact</a>
+                        </li>
+                     </ul> 
+                  </div>
+               </div>
+            </div>
+         </nav>
+      </header>
+      <section>
+         <div id="head">
+            <div class="line">
+               <h1>We will provide you best services.</h1>
+            </div>
+         </div>
+         <!-- FIRST BLOCK --> 	
+         <div id="first-block">
+            <div class="line">
+               <h2>EXPLORE</h2>
+               <br>
+               <div class="margin">
+                  <div class="s-12 m-6 l-3 margin-bottom">
+                     <a href="about.html"><i class="icon-paperplane_ico icon2x"></i></a>
+                     <h3>About us</h3>
+                  </div>
+                  <div class="s-12 m-6 l-3 margin-bottom">
+                      <a href="#service"><i class="icon-star icon2x"></i></a>
+                     <h3>Services</h3>
+                  </div>
+                  <div class="s-12 m-6 l-3 margin-bottom">
+                      <a href="book.html"><i class="icon-message icon2x"></i></a>
+                     <h3>Book now</h3>
+                  </div>
+                  <div class="s-12 m-6 l-3 margin-bottom">
+                      <a href="#contact"><i class="icon-mail icon2x"></i></a>
+                     <h3>Contact</h3>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- SECOND BLOCK --> 	
+         <div id="second-block">
+            <div class="line">
+               <div class="margin-bottom">
+                  <div class="margin">
+                     <article class="s-12 l-8 center">
+                        <h1>Requirements</h1>
+                        <p class="margin-bottom">
+						<b>Document Required For Court Marriage
+                        </b>
+						</p>
+                        <a class="button s-12 l-4 center" href="product.html">Read more</a>  			
+                     </article>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Services--> 	
+		 <div id="service">
+         <div id="third-block">
+            <div class="line">
+               <h2>Services</h2>
+               
+               <div class="margin">
+			   <div id="owl-demo" class="owl-carousel owl-theme">
+                  <div class=" item ">
+                     <a href="1.html">
+					 <img src="img/1.jpg" alt="alternative text">      
+                     <p class="subtitile">Arya Samaj Marriage
+                     </p>
+					 </a>
+                  </div>
+                  <div class="item">
+					<a href="2.html">
+                     <img src="img/2.jpg" alt="alternative text">      
+                     <p class="subtitile">Court Marriage
+                     </p>
+					 </a>
+                  </div>
+                  <div class="item">
+					<a href="3.html">
+                     <img src="img/3.jpg" alt="alternative text">      
+                     <p class="subtitile">Foreigner Marriage
+                     </p>
+					 </a>
+                  </div>
+                  <div class="item">
+                     <a href="4.html">
+					 <img src="img/4.jpg" alt="alternative text">      
+                     <p class="subtitile">Hindu Marriage
+                     </p>
+					 </a>
+                  </div>
+				  <div class="item">
+                     <a href="5.html">
+					 <img src="img/5.jpg" alt="alternative text">      
+                     <p class="subtitile">Inter Cast Marriage
+                     </p>
+					 </a>
+                  </div>
+                  <div class="item">
+					<a href="6.html">
+                     <img src="img/6.jpg" alt="alternative text">      
+                     <p class="subtitile">Inter Religion Marriage
+                     </p>
+					 </a>
+                  </div>
+				  
+                  <div class="item">
+					<a href="8.html">
+                     <img src="img/8.jpg" alt="alternative text">      
+                     <p class="subtitile">Muslim Marriage
+                     </p>
+					 </a>
+                  </div>
+                  <div class="item">
+					<a href="9.html">
+                     <img src="img/9.jpg" alt="alternative text">      
+                     <p class="subtitile">NRI Marriage
+                     </p>
+					 </a>
+                  </div>
+                  <div class="item">
+				  <a href="10.html">
+                     <img src="img/10.jpg" alt="alternative text">      
+                     <p class="subtitile">Special Marriage
+                     </p>
+					 </a>
+                  </div>
+				 </div>
+               </div>
+            </div>
+         </div>
+		 </div>
+         <div id="fourth-block">
+            <div class="line">
+			<h2>Listen from our clients</h2>
+               <div id="owl-demo2" class="owl-carousel owl-theme">
+                  <div class="item ">
+					<div class="s-3 m-3 l-2 image-cropper">
+						<img src="img/1-s.jpg" class="rounded" />
+					</div>
+					 <h3 style="color:#fff;">A.David</h3>
+                     <p class="s-12 m-9 l-10">
+					 Hii my name is A.David, I am from south India but had married with a northeastern girl. There were various problems we were facing in getting our msrrisgr registration done. So we met Satvinder Sir, he is really a nice and helpful person, he took all our problems and helped us in our marriage registration done.
+					 </p>
+                  </div>
+                  <div class="item ">
+					<div class="s-3 m-3 l-2 image-cropper">
+						<img src="img/2-s.jpg" class="rounded" />
+					</div>
+					 <h3 style="color:#fff;">Nayantara</h3>
+                     <p class="s-12 m-9 l-10">
+					 My parents were completely against my love marriage and were not allowing me to marry the boy I wanted to marry with him because he belongs to som other caste, but then I contacted Satvinder sir and he supported and assisited me in my complete court marriage procedure and even after that…and today I am happily living with my husband.
+					 </p>
+                  </div>
+                  <div class="item ">
+					<div class="s-3 m-3 l-2 image-cropper">
+						<img src="img/3-s.jpg" class="rounded" />
+					</div>
+					 <h3 style="color:#fff;">Namanpreet</h3>
+                     <p class="s-12 m-9 l-10">
+					 Hii my name Namanpreet and I am really very impressed with their services and and we got our work done within 2 hours without any kind of delay or any problem.....thanks satvinder ji
+					 </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+	  <section id="contact">
+		<div id="content" class="left-align contact-page">
+            <div  class="line">
+               <div class="margin">
+                  <div class="s-12 l-6">
+                     <h2>DELHI COURT MARRIAGE</h2>
+                     <address>
+                        <p><i class="icon-home icon"></i> 735N Western Wing,Tis Hazari Court/ <br>Chamber No-1116 Rohini Court Complex</p>
+                        <p><i class="icon-globe_black icon"></i> Delhi - India</p>
+                        <p><i class="icon-mail icon"></i> manpreetsingh.singh05@gmail.com</p>
+                     </address>
+                     <br />
+                     <h2>Social</h2>
+                     <p><i class="icon-facebook icon"></i> <a href="https://www.facebook.com"></a></p>
+                     <p class="margin-bottom"><i class="icon-twitter icon"></i> <a href="https://twitter.com/"></a></p>
+                  </div>
+                  <div class="s-12 l-6">
+                     <h2>Contact Us</h2>
+                     <form class="customform" name="myForm" method="post" action="send_form_email.php" onsubmit="return validateForm()">
+                        <div class="s-12 l-7"><input name="email" placeholder="Your e-mail*" title="Your e-mail" type="text" required/></div>
+                        <div class="s-12 l-7"><input name="first_name" placeholder="Your First name*" title="Your first name" type="text" required/></div>
+                        <div class="s-12 l-7"><input name="last_name" placeholder="Your Last name*" title="Your last name" type="text" required /></div>
+                        <div class="s-12 l-9"><textarea placeholder="Your message*" name="comments" rows="5" required></textarea></div>
+                        <div class="s-12 m-6 l-4"><button type="submit">Submit Button</button></div>
+						
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- MAP-- >	
+         <!--div id="map-block">  	  
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d682251.1123056135!2d17.063451638281247!3d48.09010461740988!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476c8cbf758ecb9f%3A0xddeb1d26bce5eccf!2sGallayova+2150%2F19%2C+841+02+D%C3%BAbravka%2C+Slovensk%C3%A1+republika!5e0!3m2!1ssk!2s!4v1412519122400" width="100%" height="250" frameborder="0" style="border:0"></iframe>
+		 </div-->
+		 
+		 <div id="map" style="width:100%;height:250px;"></div>
+			</div>
+			
+			  <script>
+				  function initMap() {
+					var uluru = {lat: 28.664577, lng: 77.2170551};
+					var map = new google.maps.Map(document.getElementById('map'), {
+					  zoom: 16,
+					  center: uluru
+					});
+					var marker = new google.maps.Marker({
+					  position: uluru,
+					  map: map
+					});
+				  }
+				</script>
+				<script async defer
+				src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-05dbIeki5kgWIspgA6OxArRL1BGEF60&callback=initMap">
+				</script>
+	  </section>
+      <!-- FOOTER -->   
+      <footer>
+         <div class="line">
+            <div class="s-12 l-6">
+               <p>DELHI COURT MARRIAGE
+               </p>
+            </div>
+            <div class="s-12 l-6">
+               <p class="right">
+			   
+               </p>
+            </div>
+         </div>
+      </footer>
+      <script type="text/javascript" src="owl-carousel/owl.carousel.js"></script>   
+      <script type="text/javascript">
+         jQuery(document).ready(function($) {  
+           $("#owl-demo").owlCarousel({
+			  autoPlay: 3000, //Set AutoPlay to 3 seconds
+			  items : 4,
+			  itemsDesktop : [1199,3],
+			  itemsDesktopSmall : [979,3]
+			  });
+           $("#owl-demo2").owlCarousel({
+         	slideSpeed : 300,
+         	autoPlay : true,
+         	navigation : false,
+         	pagination : true,
+         	singleItem:true
+           });
+         });	
+          
+      </script> 
+   </body>
+</html>
